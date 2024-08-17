@@ -72,6 +72,61 @@ section ul {
     padding-left: 20px;
 }
 
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e03a3a;
+}
+
+/* Estilos de la galería */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img, .gallery video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border-radius: 8px;
+}
+
 /* Estilos del pie de página */
 footer {
     text-align: center;

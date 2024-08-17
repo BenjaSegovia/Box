@@ -11,8 +11,11 @@
         <h1>Boxeo Recreativo y Competitivo</h1>
         <nav>
             <ul>
+                <li><a href="#intro">Inicio</a></li>
                 <li><a href="#horarios">Horarios e Información</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +38,45 @@
     <section id="ubicacion">
         <h2>Ubicación</h2>
         <p>Nos encontramos en la calle Ruy Díaz de Guzmán, entre Santa Sofía y San Gerónimo.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            
+            <div class="video">
+                <video controls>
+                    <source src="box.1.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            
+            <div class="video">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     
     <footer>
